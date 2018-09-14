@@ -1,0 +1,278 @@
+body{
+    height: auto;
+}
+
+/*style inputs , select elements and textareas*/
+textarea{
+    width :100%;
+    padding:12px;
+    border : 1px solid #ccc;
+    border-radius : 4px;
+    box-sizing: border-box;
+    resize:vertical;
+    }
+input[type=email],select {
+    width :25%;
+    padding:12px;
+    border : 1px solid #ccc;
+    border-radius : 5px;
+    box-sizing: border-box;
+    resize:vertical;
+    }
+input[type=text], select {
+    width :25%;
+    padding:12px;
+    border : 1px solid #ccc;
+    border-radius : 5px;
+    box-sizing: border-box;
+    resize:vertical;
+    }
+input[type=password], select {
+    width :25%;
+    padding:12px;
+    border : 1px solid #ccc;
+    border-radius : 5px;
+    box-sizing: border-box;
+    resize:vertical;
+    }
+    /*style the label to display next to the inputs*/
+    
+label {
+    padding: 12px 12px 12px 0px;
+    display : inline-block ;
+    }
+    /*style login button*/
+button[type=Submit]{
+    background-color: #4CAF50;
+    padding:12px 10px;
+    border :none ;
+    border-radius: 5px;
+    cursor :pointer;
+    float: center;
+    }
+    
+    /*style submit button*/
+input[type=Submit]{
+    background-color: #4CAF50;
+    padding:10px 10px;
+    border :none ;
+    border-radius: 5px;
+    cursor :pointer;
+    float: center;
+    }
+    /**/
+    /* style the container*/
+.container {
+    border-radius:1px;
+    background-color: #f2f2f2;
+    padding:2px;
+    }
+    
+    /*floating column for labels: 25% width*/
+.col-25 {
+    float : center;
+    width : 25%;
+    margin :6px;
+    }
+    
+    /*responsive layut when the screen is less than 600px wide, make the two columns stack to each other instead of next to each other*/
+    
+@media screen and (max-width: 600px){
+    
+    .col-25, .col-75,
+    input[type=submit]{
+    width : 100%;
+    margin-top:0;
+    }}
+    
+@media only screen and (max-width: 600px) {
+        body {
+            background-color: lightblue;
+        }
+    }
+    /*viewing answer page*/
+div.container {
+        width: 100%;
+        border: 1px solid gray;
+    }
+    
+header, footer {
+        padding: 2px;
+        color: white;
+        background-color: #99d6ff;
+        clear: left;
+        text-align: center;
+    }
+    
+nav {
+        float: left;
+        max-width: 160px;
+        margin: 0;
+        padding: 1em;
+    }
+    
+nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    /*tablestyling*/
+    
+table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    
+tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+       
+nav ul a {
+        text-decoration: none;
+    }
+    /*article styling*/
+article {
+        margin-left: 170px;
+        border-left: 1px solid gray;
+        padding: 1em;
+        overflow: hidden;
+    }
+    /* top navigation bar*/
+ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    
+li {
+        float: left;
+    }
+    
+li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    /* Change the link color to #111 (black) on hover */
+li a:hover {
+        background-color: #111;
+    }
+    
+    
+    /*responsiveness*/
+div.example {
+      background-color: lightgrey;
+      padding: 5px;
+    }
+    
+@media screen and (min-width: 300px) {
+      div.example {
+        font-size: 20px;
+      }
+    }
+    
+@media screen and (max-width: 300px) {
+      div.example {
+        font-size: 5px;
+      }
+    }
+.site-flex{
+        margin-top:12px;
+        display: inline-flex;
+        flex-flow: row wrap;
+        align-content: space-around;
+        justify-content: center;
+    }
+.site-flex > img {
+        margin:4px;
+    }
+.create-pic{
+    width: 80%;
+    height: 80%;
+
+
+}
+.create-todo {
+    position: relative; 
+    max-width: 90%; /* Maximum width */
+    margin: 0 auto; /* Center it */
+  }
+  
+  .create-todo .content {
+    position: absolute; /* Position the background text */
+    top: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+  }
+  .addBtn {
+    padding: 10px;
+    width: 5%;
+    background: #d9d9d9;
+    color: #555;
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.Delete {
+    padding: 3px;
+    width: 5%;
+    background: #d9d9d9;
+    color: #555;
+    float: right;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.top{
+    width: 100%;
+    align-content: center;
+}
+.left{
+    float:left;
+    width: 50%;
+}
+.right{
+    float:left;
+    width: 50%;
+}
+
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+    
